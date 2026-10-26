@@ -2,10 +2,11 @@ services:
   bookleaf:
     build: .
     ports:
-      - "3001:3001"
+      - "${BIND_ADDRESS:-127.0.0.1}:3001:3001"
     environment:
       # Local HTTP only. Use production plus an HTTPS proxy on a hosted deployment.
-      NODE_ENV: development
+      NODE_ENV: ${NODE_ENV:-development}
+      TRUST_PROXY: ${TRUST_PROXY:-0}
       DATABASE_PATH: /app/data/bookleaf.sqlite
       DEMO_PASSWORD: ${DEMO_PASSWORD:-BookLeafDemo!2026}
       ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@bookleaf.local}
