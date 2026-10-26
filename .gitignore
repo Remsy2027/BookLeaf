@@ -10,3 +10,4 @@ output/
 BookLeaf_Technical_Assignment_1.pdf
 .caffeinate.log
 .caffeinate.pid
+.cloudflared/

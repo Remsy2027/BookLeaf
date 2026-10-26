@@ -1,4 +1,4 @@
-# Temporary reviewer URL. A named Cloudflare Tunnel is needed for a stable domain.
+# Stable reviewer hostname through the dedicated BookLeaf Cloudflare Tunnel.
 services:
   bookleaf:
     environment:
@@ -6,7 +6,15 @@ services:
       TRUST_PROXY: "1"
   tunnel:
     image: cloudflare/cloudflared:latest
-    command: tunnel --no-autoupdate --url http://bookleaf:3001
+    command: tunnel --config /etc/cloudflared/config.yml --no-autoupdate run
+    # Root inside this unprivileged container can read the mode-600 bind mount.
+    user: "0:0"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - ./deploy/cloudflared.yml:/etc/cloudflared/config.yml:ro
+      - ./.cloudflared/bookleaf.json:/etc/cloudflared/credentials.json:ro
     restart: unless-stopped
     depends_on:
       bookleaf:

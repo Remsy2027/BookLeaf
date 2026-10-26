@@ -1,0 +1,6 @@
+tunnel: 2be4fc5b-5b88-47d0-ae8b-b826dce85983
+credentials-file: /etc/cloudflared/credentials.json
+ingress:
+  - hostname: bookleaf.mohitpatel.de
+    service: http://bookleaf:3001
+  - service: http_status:404
