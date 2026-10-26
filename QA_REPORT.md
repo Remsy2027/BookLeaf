@@ -2,13 +2,15 @@
 
 ## Verdict
 
-**The core application and live Mac demo are verified. Manual file-selection verification remains outstanding; the public tunnel is temporary.**
+**The core application and live Mac demo are verified. Manual file-selection verification remains outstanding; the public hostname is stable but depends on the Mac staying online.**
 
-The Mac deployment is now live at https://endorsement-chess-black-wines.trycloudflare.com. Hosted smoke tests passed for both roles, secure cookies, book ownership, Groq classification/drafting, private notes, replies, status/assignment and logout. Ticket and message persistence passed after restarting the Mac application container. Chrome also verified the public administrator workspace. See [deployment results](docs/qa/deployment.json) and [screenshot](docs/qa/mac-live-demo.jpg). The source repository is private. The tunnel URL can change on restart and requires the Mac to remain awake/online.
+The Mac deployment is now live at https://bookleaf.mohitpatel.de. Hosted smoke tests passed for both roles, secure cookies, book ownership, Groq classification/drafting, private notes, replies, status/assignment and logout. Ticket and message persistence passed after restarting the Mac application container. Chrome also verified the public administrator workspace. See [deployment results](docs/qa/deployment.json) and [screenshot](docs/qa/mac-live-demo.jpg). The source repository is private. The named tunnel keeps the hostname stable across restarts; the Mac must remain awake/online.
 
-The earlier deployment blocker is resolved for a temporary reviewer demo; a permanent domain and production hosting are outside this setup.
+The earlier deployment blocker is resolved. A dedicated named tunnel serves the custom domain; this is still a Mac-hosted demo rather than independently managed hosting.
 
 ## Follow-up verification ? current status
+
+- Custom-domain cutover: https://bookleaf.mohitpatel.de uses a dedicated named Cloudflare Tunnel. Full hosted checks passed: [custom-domain results](docs/qa/custom-domain.json). At verification time Windows retained a negative DNS cache; Cloudflare DNS and the Mac resolved the hostname successfully.
 
 - Groq `openai/gpt-oss-120b`: live connection, six-category classification and two synthetic draft checks pass. Results: [ai-live.json](docs/qa/ai-live.json).
 - Chrome: real AI classification and an editable metadata reply were observed. The draft correctly uses the current conversation and the 3?5 business-day policy; it was not sent automatically.

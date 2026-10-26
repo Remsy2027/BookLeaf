@@ -1,6 +1,6 @@
 # Deployment guide
 
-The project is now deployed on the owner?s Mac mini at https://endorsement-chess-black-wines.trycloudflare.com. See [MAC_DEPLOYMENT.md](MAC_DEPLOYMENT.md) for the active deployment. The instructions below also support a separate hosted deployment.
+The project is now deployed on the owner?s Mac mini at https://bookleaf.mohitpatel.de. See [MAC_DEPLOYMENT.md](MAC_DEPLOYMENT.md) for the active deployment. The instructions below also support a separate hosted deployment.
 
 ## Local Docker
 

@@ -1,0 +1,18 @@
+{
+  "url": "https://bookleaf.mohitpatel.de",
+  "testedAt": "2026-10-26T08:34:55.938Z",
+  "ticketId": "15541eb5-5fb3-4f53-9d4b-2bc1ee6316f0",
+  "result": "PASS",
+  "checks": [
+    "HTTPS health",
+    "Secure/HttpOnly session cookies",
+    "both roles",
+    "book ownership",
+    "live Groq classification",
+    "live Groq draft",
+    "private notes",
+    "public response",
+    "status/assignment",
+    "logout revocation"
+  ]
+}

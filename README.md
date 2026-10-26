@@ -2,7 +2,7 @@
 
 A private, full-stack assignment submission built with React, Express and SQLite. Authors can review their books and raise support queries; the operations team can triage, draft, respond, add private notes and manage tickets.
 
-**Delivery status:** deployed on the owner's Mac mini at [https://endorsement-chess-black-wines.trycloudflare.com](https://endorsement-chess-black-wines.trycloudflare.com) through a temporary HTTPS tunnel. Live author/admin authentication, Groq classification/drafting, private notes, replies and database persistence across a container restart passed. Source is private at https://github.com/Remsy2027/BookLeaf. The Mac must remain awake and online; the URL may change if the tunnel restarts. See [MAC_DEPLOYMENT.md](MAC_DEPLOYMENT.md).
+**Delivery status:** deployed on the owner's Mac mini at [https://bookleaf.mohitpatel.de](https://bookleaf.mohitpatel.de) through a dedicated named Cloudflare Tunnel. Live author/admin authentication, Groq classification/drafting, private notes, replies and database persistence across a container restart passed. Source is private at https://github.com/Remsy2027/BookLeaf. The hostname remains stable across tunnel restarts; the Mac must remain awake and online. See [MAC_DEPLOYMENT.md](MAC_DEPLOYMENT.md).
 
 **Hosted credentials:** the deployed demo uses a separate random password, supplied privately by the owner. The development password below applies only to a fresh local setup. No API keys or hosted passwords are committed.
 
