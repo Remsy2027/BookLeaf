@@ -1,0 +1,65 @@
+{
+  "testedAt": "2026-10-26T08:15:19.286Z",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "classification": [
+    {
+      "subject": "Royalty payment overdue",
+      "category": "Royalty & Payments",
+      "priority": "High",
+      "reason": "The user reports six months of unpaid royalties, which matches the rule that long‑unpaid royalties are High priority.",
+      "source": "ai",
+      "passed": true
+    },
+    {
+      "subject": "Wrong ISBN linked",
+      "category": "ISBN & Metadata Issues",
+      "priority": "High",
+      "reason": "The ticket reports an incorrect ISBN linking to a different book, which is an ISBN/metadata error requiring prompt correction.",
+      "source": "ai",
+      "passed": true
+    },
+    {
+      "subject": "Printing defect",
+      "category": "Printing & Quality",
+      "priority": "Medium",
+      "reason": "The ticket reports loose binding and blurry pages, a quality problem with the printed books, which warrants a prompt but not emergency response.",
+      "source": "ai",
+      "passed": true
+    },
+    {
+      "subject": "Listing unavailable",
+      "category": "Distribution & Availability",
+      "priority": "Medium",
+      "reason": "The author reports that their published book is marked as unavailable on Amazon, which is a distribution availability issue requiring attention but not an immediate emergency.",
+      "source": "ai",
+      "passed": true
+    },
+    {
+      "subject": "Production update",
+      "category": "Book Status & Production Updates",
+      "priority": "Low",
+      "reason": "The request is a routine inquiry about the current production stage of a book.",
+      "source": "ai",
+      "passed": true
+    },
+    {
+      "subject": "Account question",
+      "category": "General Inquiry",
+      "priority": "Low",
+      "reason": "The request is to update an author biography, which is a routine change and does not involve urgent issues.",
+      "source": "ai",
+      "passed": true
+    }
+  ],
+  "draft": {
+    "draft": "Hi Demo Author,\n\nThank you for reaching out and for partnering with BookLeaf. I understand it can be confusing not knowing which quarter your pending royalty of ₹1,500 belongs to, and I’m sorry for any uncertainty this may have caused.\n\nRoyalties are calculated on a quarterly basis (Jan‑Mar, Apr‑Jun, Jul‑Sep, Oct‑Dec). Once a quarter closes, we compute the net profit (MRP minus printing cost, platform commission and shipping), apply the 80/20 split, and then process payments within 45 days of the quarter’s end. A balance is only paid out once it reaches the minimum threshold of INR 1,000; smaller amounts roll forward to the next payout cycle.\n\nAt this stage we need to confirm the exact accrual quarter for your pending amount and verify that your bank details are up‑to‑date. Our next step is to review the payout records and follow up with you within 48 hours with a clear update.\n\nIf you have any additional information (e.g., recent bank verification details) you’d like to share here, please do so and we’ll pass it along to the team.\n\nThank you for your patience.\n\nBest regards,\nBookLeaf Support Team",
+    "source": "ai",
+    "passed": true
+  },
+  "metadataDraft": {
+    "draft": "Hi Demo Author,\n\nThank you for reaching out. I understand you’d like to update the description of your published book and are wondering about the timeline.\n\nYou can submit the revised description here in this chat or via your BookLeaf dashboard. Once we receive the new text, our production team will process the change. Typically, updated metadata appears on retailer sites within 3–5 business days.\n\nNext steps:\n1. Please share the exact wording you’d like to use for the description.\n2. Our team will forward it to the production team and confirm the update.\n3. We will follow up with you within 48 hours to let you know the status.\n\nWe appreciate your partnership and are here to help.\n\nWarm regards,\nBookLeaf Support Team",
+    "source": "ai",
+    "passed": true
+  }
+}
