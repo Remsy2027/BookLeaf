@@ -1,6 +1,6 @@
 # Verification record
 
-**Latest verdict:** see [QA_REPORT.md](QA_REPORT.md). Groq is working and tested live; the attachment picker and visual/loading fixes are implemented. There are 19 passing automated tests. Hosted deployment remains deferred, and automated file selection is limited by the Chrome extension permission. Earlier notes below are historical.
+**Latest verdict:** see [QA_REPORT.md](QA_REPORT.md). Groq is working and tested live; the attachment picker and visual/loading fixes are implemented. There are 19 passing automated tests. The Mac HTTPS demo has passed hosted checks and restart persistence. Automated file selection is still limited by the Chrome extension permission. Earlier notes below are historical.
 
 Verified locally on 26 October 2026 with Node 24, Windows, Chrome and Docker Desktop (Linux containers).
 

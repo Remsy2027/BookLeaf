@@ -1,0 +1,19 @@
+{
+  "url": "https://endorsement-chess-black-wines.trycloudflare.com",
+  "testedAt": "2026-10-26T08:28:20.639Z",
+  "ticketId": "a5b1894c-3019-41bd-b2a3-d1af79e4fcc2",
+  "result": "PASS",
+  "checks": [
+    "HTTPS health",
+    "Secure/HttpOnly session cookies",
+    "both roles",
+    "book ownership",
+    "live Groq classification",
+    "live Groq draft",
+    "private notes",
+    "public response",
+    "status/assignment",
+    "logout revocation",
+    "ticket/messages persisted across Mac container restart"
+  ]
+}

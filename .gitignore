@@ -8,3 +8,5 @@ brief-page-*.png
 playwright-*.png
 output/
 BookLeaf_Technical_Assignment_1.pdf
+.caffeinate.log
+.caffeinate.pid

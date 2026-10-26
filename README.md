@@ -2,7 +2,9 @@
 
 A private, full-stack assignment submission built with React, Express and SQLite. Authors can review their books and raise support queries; the operations team can triage, draft, respond, add private notes and manage tickets.
 
-**Delivery status:** implemented and tested locally, with working Groq AI classification and drafting verified through live synthetic fixtures and Chrome. Groq, Gemini and OpenAI are supported; Groq is selected locally. Nineteen automated tests and the production build pass. The hosted demo remains deferred. Keys stay in the ignored `.env` and are excluded from the source archive.
+**Delivery status:** deployed on the owner's Mac mini at [https://endorsement-chess-black-wines.trycloudflare.com](https://endorsement-chess-black-wines.trycloudflare.com) through a temporary HTTPS tunnel. Live author/admin authentication, Groq classification/drafting, private notes, replies and database persistence across a container restart passed. Source is private at https://github.com/Remsy2027/BookLeaf. The Mac must remain awake and online; the URL may change if the tunnel restarts. See [MAC_DEPLOYMENT.md](MAC_DEPLOYMENT.md).
+
+**Hosted credentials:** the deployed demo uses a separate random password, supplied privately by the owner. The development password below applies only to a fresh local setup. No API keys or hosted passwords are committed.
 
 ## Run locally
 

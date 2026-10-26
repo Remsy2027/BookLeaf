@@ -2,9 +2,11 @@
 
 ## Verdict
 
-**The core local application works, but the assignment is not fully submission-ready.**
+**The core application and live Mac demo are verified. Manual file-selection verification remains outstanding; the public tunnel is temporary.**
 
-The remaining delivery requirement is the hosted demo URL, intentionally deferred at the user's request. Groq now passes live AI checks, and the attachment-selection UI and visual fixes have been implemented.
+The Mac deployment is now live at https://endorsement-chess-black-wines.trycloudflare.com. Hosted smoke tests passed for both roles, secure cookies, book ownership, Groq classification/drafting, private notes, replies, status/assignment and logout. Ticket and message persistence passed after restarting the Mac application container. Chrome also verified the public administrator workspace. See [deployment results](docs/qa/deployment.json) and [screenshot](docs/qa/mac-live-demo.jpg). The source repository is private. The tunnel URL can change on restart and requires the Mac to remain awake/online.
+
+The earlier deployment blocker is resolved for a temporary reviewer demo; a permanent domain and production hosting are outside this setup.
 
 ## Follow-up verification ? current status
 
