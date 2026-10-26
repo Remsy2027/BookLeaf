@@ -1,0 +1,13 @@
+# Temporary reviewer URL. A named Cloudflare Tunnel is needed for a stable domain.
+services:
+  bookleaf:
+    environment:
+      NODE_ENV: production
+      TRUST_PROXY: "1"
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate --url http://bookleaf:3001
+    restart: unless-stopped
+    depends_on:
+      bookleaf:
+        condition: service_healthy
